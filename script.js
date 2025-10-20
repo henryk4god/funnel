@@ -404,4 +404,96 @@ Each version should include:
 2. Always give your top 3 recommendations where necessary.`,
 
         11: `You are a professional video scriptwriter.  
-Write a 3-minute video sales script to promote "${data.product
+Write a 3-minute video sales script to promote "${data.productName}".  
+
+Structure:
+1. Hook (first 5 seconds)
+2. Pain story
+3. Solution intro
+4. Benefits and proof
+5. Call to action
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        12: `You are a retargeting ad specialist.  
+Write a retargeting ad script for people who visited the sales page but didn't buy "${data.productName}".  
+
+Include:
+1. Reminder of what they missed
+2. Emotional trigger
+3. Limited-time incentive
+4. Strong CTA
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        13: `You are a funnel optimization expert.  
+Analyze the following funnel performance metrics:
+${data.metrics}
+
+Provide:
+1. Key insights on weak areas
+2. Specific recommendations for A/B tests
+3. Strategies to improve conversions and average order value
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        14: `You are a customer experience analyst.  
+Review the following customer feedback:
+${data.feedback}
+
+Identify:
+- Common objections or frustrations
+- Suggested improvements
+- Emotional language customers use
+Summarize how to refine messaging or offers to match customer psychology.
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        15: `You are a growth marketing strategist.  
+Design a scaling strategy for a sales funnel selling "${data.productName}".  
+
+Include:
+1. Paid traffic scaling plan
+2. Automation setup (email + retargeting)
+3. Referral/affiliate system
+4. KPIs to measure scaling success
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        16: `You are an automation funnel expert.  
+Convert the live sales funnel for "${data.productName}" into an evergreen funnel.  
+
+Include:
+1. Automated lead generation system
+2. Evergreen email sequence (with scarcity simulation)
+3. Autopilot sales mechanism
+4. Recommended tools or platforms to manage automation
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`,
+
+        17: `You are a professional funnel strategist, copywriter, and automation expert.  
+Build a complete high-converting sales funnel for "${data.productName}" targeting "${data.targetAudience}".  
+
+Deliver:
+1. Funnel structure and flow
+2. Offer and pricing plan
+3. Landing page copy
+4. Sales page copy
+5. Email sequences (lead nurture + sales + post-purchase)
+6. Ad copy & video script
+7. Scaling & automation recommendations
+
+Present results section by section.
+
+1. No explanations, no introductions, no additional text.
+2. Always give your top 3 recommendations where necessary.`
+    };
+    
+    return promptTemplates[promptId] || "Prompt template not found.";
+}
